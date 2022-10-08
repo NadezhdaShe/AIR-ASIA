@@ -1,26 +1,10 @@
-@font-face {
-  font-family: 'OpenSans-Bold';
-  src: url(../fonts/OpenSans-Bold.woff2) format('woff2'), 
-  url(../fonts/OpenSans-Bold.woff) format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-Regular.woff2) format('woff2'), 
-  url(../fonts/OpenSans-Regular.woff) format('woff');
-  font-weight: normal;
-  font-style: normal;
-} 
-
 
 html {
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {  
-  font: 16px/1.5 'OpenSans', Arial, Helvetica, sans-serif ;
+  font: 16px/1.5 'Open Sans', Arial, Helvetica, sans-serif ;
   color: #fff;
   background: #001821;
   -webkit-font-smoothing: antialiased;
@@ -48,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  margin-top: 0;
+  margin: 0;
 }
 
 * {
@@ -58,48 +42,45 @@ p {
 
 .container {
  margin: 0 auto;
- width: 1150;
+ width: 1140px;
+ position: relative;
 }
 
 .header {
-  height: 123px;    
-  width: 1141px;   
-  left: 0px;
-  top: 26px;
-  border-radius: 0px;
-  position: relative;
-  margin-bottom: 0px;
+  height: 123px;
+  margin-bottom: 74px;
 }
+ .header__logo {
+  position: absolute;
+  top: 29px;
+  left: 0px;   
+ }
+
+ .header__menu {
+  position: absolute;
+  left: 164px;
+  top: 38px;
+ }
+
+ .header__contacts {
+  position: absolute;
+  top: 33px;
+  right: 0;
+ }
 
 .logo {
   height: 36px;    
   width: 85px;    
-
-  top: 29px;
-  left: 39px;   
 }
 
 .menu {
-  position: absolute;
-  height: 19px;
-  width: 264px;
-  top: 42px;
-  left: 554;
   color: #ffffff; 
-}
-
-.contacts {
-  position: absolute;
-  top: 26px;
-  left: 1340px;
-  width: 191px;
-  height: 35px;
 }
 
 .menu__item {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 0;
+  margin-right: 50px;
 }
 
 .menu__item:last-child {
@@ -127,24 +108,29 @@ p {
 .contacts__info {
   color: #9A9A9A;
   font-size: 11px;
+  line-height: 20px;
+  margin-bottom: 6px;
 }
 
 .contacts__phone {
   text-decoration: none;
   font-size: 26px;
-  margin-bottom: 4px;
+  line-height: 1;
+  display: block;
 }
 
 .contacts__shedule {
   font-size: 13px;
   text-decoration: underline;
-  color: #bfb56b
+  color: #bfb56b;
+  line-height: 1;
+  display: block;
 }
 
-.container {
-  
+.container {margin-left: 90px;}
 
-margin-left: 90px;
+.hero {
+  margin-bottom: 247px;
 }
 
 .hero__text-section {
@@ -154,48 +140,72 @@ margin-left: 90px;
 .hero__title {
   font-size: 72px;
   font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 50px;
+  line-height: 98px;
+  margin-bottom: 27px; 
 }
 
 .hero__discription {
   font-size: 18px;
   color: #fff;
-  margin-bottom: 80px;
+  margin-bottom: 33px;
+  line-height: 20px;
 }
 
 .btn {
+  display: inline-block;
   background: #F5170E;
   border-radius: 35px;  
   padding: 18px 40px;
+  font-size: 14px;
+  line-height: 19px;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.btn--color--ginger {
-  background: #F5170E;
-}
-
 .btn:hover {
   background: #F5170E;
   box-shadow: 0 0 25px 0;
 }
+ 
+.btm--theme-tours {
+  background-color: #ffffff;
+  border: 1px solid #F5170E;
+  color: #F5170E;
+  padding: 18px 30px;
+}
 
-.section {
-  margin-bottom: 227px;
+.btn--color--ginger {
+  background: #F5170E;
+  color: #ffffff;
+}
+
+.section-about{
+  margin-bottom: 50px;
+}
+
+.tours {
+  margin-bottom: 126px;
 }
 
 .tours__title {
   font-size: 36px;
+  line-height: 49px;
   font-weight: bold;
-  margin-bottom: 45px;
+  margin-bottom: 51px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.tours__cover {
-min-height: 144px;
-margin-bottom: 33px;
+.tours__title::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 21px;
+  height: 28px;
+  margin-left: 12px;
+  background: url(../images/icons/flame.png) center center no-repeat;
 }
 
 .tours__item {
@@ -203,7 +213,7 @@ margin-bottom: 33px;
   background: #fff;
   border-radius: 4px;
   display: inline-block;
-  margin-right: 27px;
+  margin-right: 22px;
   width: 362px;
 }
 
@@ -213,52 +223,76 @@ margin-bottom: 33px;
 
 .tours__item-img {
   min-height: 144px;
-  margin-bottom: 33px;  
-  position: relative;
 }
 
-.tours__item-title {
-  padding: 22px 33px;
+.tours__cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.tours__content {
+  padding: 33px 16px 26px 22px;
+}
+.tours__item-title {  
   color: #000000;
+  font-weight: 700;
   font-size: 24px ;
-  font-weight: bold;
-  margin-bottom: 30px;
+  line-height: 33px;
+  margin-bottom: 21px;
 }
 
-.tours__ico {
-  display: inline-block;
-  vertical-align: top;
-  padding: 28px 21px;
+.tours__features {
+  margin-bottom: 10px;
+  padding-left: 6px;
+  margin-bottom: 23px;
 }
 
 .tours__feature {
   display: inline-block;
   vertical-align: top;
+  margin-right: 26px;
 }  
 
 .tours__feature:last-child {
   margin-right: 0;
 }
+ 
+.tours__ico {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
 
-.tours__feature-text {
-  padding: 10px 23px;
+.tours__feature-text { 
   color: #666666;
-  font-size: 16px ;
-  font-weight: bold;
-  margin-bottom: 10px;
+  line-height: 22px;
+  display: inline-block;
+  vertical-align: middle; 
 }
 
 .tours__description {
-  padding: 22px 23px;
   color: #303030;
-  width: 400;
-  line-height: 21px;  
+  line-height: 21px; 
+  font-size: 14px;
+  margin-bottom: 24px; 
 }
 
 .tours__btn-wrapper {
   text-align: center;
 }
 
+.news {
+  margin-bottom: 143px;
+}
+
+.news__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  margin-bottom: 51px;
+}
 
 .news__item {
   width: 557px;
@@ -267,6 +301,11 @@ margin-bottom: 33px;
   position: relative;
   border-radius: 4px;
   overflow: hidden;
+  margin-right: 21px;
+}
+ 
+.news__item:last-child {
+  margin-right: 0;
 }
 
 .news__image {
@@ -282,22 +321,28 @@ margin-bottom: 33px;
   right: 0;
   bottom: 0;
   padding: 25px 30px;
-  min-height: 200px;  
+  min-height: 162px;  
 }
 
 .news__date {
   font-size: 14px;
-  margin-bottom: 50px;
+  line-height: 21px;
+  margin-bottom: 12px;
+  display: block;
 }
 
 .news__card-title {
   font-size: 24px;
+  line-height: 36px;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .news__list {
-  margin-bottom: 130px;
+  margin-bottom: 54px;
+}
+
+.news__text {
+  line-height: 21px;
 }
 
 .paginator {
@@ -316,6 +361,7 @@ margin-bottom: 33px;
 .paginator__item {
   display: inline-block;
   vertical-align: middle;
+  margin-right: -2px;
 }
 
 .paginator__item--active .paginator__link {
@@ -333,32 +379,47 @@ margin-bottom: 33px;
   line-height: 32px;
 }
 
+.section-about {
+  margin-bottom: 92px;
+}
+
+.about {
+  padding-top: 97px;
+  color: #060606;
+}
+
 .about::before {
   content: "";
-  display: inline-block;
-  vertical-align: top;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
   width: 490px;
   height: 505px;
-  background: url("./images/content/gates.jpg") center center / cover no-repeat;
+  background: url("../images/content/gates.jpg") center center / cover no-repeat;
 }
 
 .about__content {
-  padding: 80px 70px;
-  display: inline-block;
-  vertical-align: top;
+  padding: 70px 202px 66px 81px;
+  display: block;
+  position: relative;
   width: 785px;
+  margin-left: auto;
+  border-radius: 5px;
+  background: url("../images/decor/mountains.jpg") center center / cover no-repeat;
 }
 
 .about__title {
   font-weight: bold;
   font-size: 36px;
-  margin-bottom: 40px;
+  line-height: 49px;
+  margin-bottom: 37spx;
 }
 
 .about__text {
-  color: #060606;
-  font-size: 16px;
-  margin-bottom: 45px;
+  line-height: 27px;
+  margin-bottom: 43px;
 }
 
 .about__text p {
@@ -377,16 +438,30 @@ margin-bottom: 33px;
   border-top: 1px solid rgba(255, 255, 255,0.1);
 }
 
+.footer__menu {
+  position: absolute;
+  left: 164px;
+  top: 56px;
+}
+
+.footer__socials {
+  position: absolute;
+  top: 50px;
+  right: 264px;
+}
+
+.footer__contacts {
+  position: absolute;
+  right: 0;
+  top: 43px;
+}
+
 .socials__item {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
-.socials {
-  top: 50px;
-  right: 500px;
-}
 
 .socials__item:last-child {
   margin-right: 0;
@@ -394,6 +469,25 @@ margin-bottom: 33px;
 
 .socials__massege {
   display: block;  
+  width: 36px;
+  height: 36px;
+  background: center center no-repeat;
+}
+
+.socials__massege--icon-tg {
+  background-image: url(../images/icons/telegram.png);
+}
+
+.socials__massege--icon-vk {
+  background-image: url(../images/icons/vk.png);
+}
+
+.socials__massege--icon-fb {
+  background-image: url(../images/icons/f.png);
+}
+
+.socials__massege--icon-ig {
+  background-image: url(../images/icons/in.png);
 }
 
 
