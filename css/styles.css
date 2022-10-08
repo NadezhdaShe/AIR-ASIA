@@ -39,6 +39,9 @@ p {
   box-sizing: border-box;
 }
 
+.main-page-wrapper {
+  background: url(../images/decor/1.jpg) center top no-repeat, url(../images/decor/2.jpg) right bottom -100px no-repeat;
+}
 
 .container {
  margin: 0 auto;
