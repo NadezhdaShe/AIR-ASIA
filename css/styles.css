@@ -130,8 +130,6 @@ p {
   display: block;
 }
 
-.container {margin-left: 90px;}
-
 .hero {
   margin-bottom: 247px;
 }
@@ -417,7 +415,7 @@ p {
   font-weight: bold;
   font-size: 36px;
   line-height: 49px;
-  margin-bottom: 37spx;
+  margin-bottom: 37px;
 }
 
 .about__text {
