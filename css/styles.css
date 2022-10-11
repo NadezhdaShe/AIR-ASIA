@@ -39,6 +39,18 @@ p {
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-width: 1200px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .main-page-wrapper {
   background: url(../images/decor/1.jpg) center top no-repeat, url(../images/decor/2.jpg) right bottom -100px no-repeat;
 }
@@ -50,37 +62,42 @@ p {
 }
 
 .header {
-  height: 123px;
+  padding-top: 27px;
   margin-bottom: 74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.header__col {
+  display: flex;
+  align-items: center;
+}
+
+.header__col--align--right {
+  justify-content: flex-end;
+}
+
  .header__logo {
-  position: absolute;
-  top: 29px;
-  left: 0px;   
  }
 
- .header__menu {
-  position: absolute;
-  left: 164px;
-  top: 38px;
+ .header__menu { 
  }
 
  .header__contacts {
-  position: absolute;
-  top: 33px;
-  right: 0;
  }
 
 .logo {
   height: 36px;    
-  width: 85px;    
+  width: 85px;   
+  margin-right: 79px; 
 }
 
 .menu {
-  color: #ffffff; 
+  color: #ffffff;
 }
 
-.menu__item {
+.menu__item {  
   display: inline-block;
   vertical-align: middle;
   margin-right: 50px;
@@ -133,9 +150,17 @@ p {
 .hero {
   margin-bottom: 247px;
 }
+ 
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
+}
 
 .hero__text-section {
-  width: 520px;
+  width: 45%;
+  /* width: 520px; */
 }
 
 .hero__title {
@@ -209,15 +234,24 @@ p {
   background: url(../images/icons/flame.png) center center no-repeat;
 }
 
-.tours__item {
+.tours__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tours__item {  
+  width: calc(100% / 3 - 18px);
   min-height: 150px;
   background: #fff;
   border-radius: 4px;
-  display: inline-block;
-  margin-right: 22px;
-  width: 362px;
 }
-
+/*
+.tours {
+  min-height: 150px;
+  background: #fff;
+  border-radius: 4px;
+}
+*/
 .tours__item:last-child {
   margin-right: 0;
 }
@@ -288,6 +322,12 @@ p {
   margin-bottom: 143px;
 }
 
+.single-news {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
 .news__title {
   font-weight: 700;
   font-size: 36px;
@@ -296,13 +336,9 @@ p {
 }
 
 .news__item {
-  width: 557px;
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  border-radius: 4px;
-  overflow: hidden;
+  Height: 394px;
   margin-right: 21px;
+  flex: 1;
 }
  
 .news__item:last-child {
@@ -316,7 +352,7 @@ p {
   object-fit: cover;
 }
 
-.news__content {
+.single-news__content {
   position: absolute;
   left: 0;
   right: 0;
@@ -325,14 +361,14 @@ p {
   min-height: 162px;  
 }
 
-.news__date {
+.single-news__date {
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 12px;
   display: block;
 }
 
-.news__card-title {
+.single-news__card-title {
   font-size: 24px;
   line-height: 36px;
   font-weight: bold;
@@ -340,29 +376,31 @@ p {
 
 .news__list {
   margin-bottom: 54px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.news__text {
+.single-news__text {
   line-height: 21px;
 }
 
 .paginator {
-  text-align: center;
-}
-
-.paginator__display,.paginator__list {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .paginator__display {
   margin-right: 25px;
 }
 
+.paginator__list {
+  display: flex;
+  align-items: center;
+}
+
 .paginator__item {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: -2px;
+  text-align: center;
 }
 
 .paginator__item--active .paginator__link {
@@ -377,7 +415,7 @@ p {
   border-radius: 50%;
   text-decoration: none;
   font-weight: bold;
-  line-height: 32px;
+  line-height: 31px;
 }
 
 .section-about {
@@ -405,7 +443,7 @@ p {
   padding: 70px 202px 66px 81px;
   display: block;
   position: relative;
-  width: 785px;
+  max-width : 785px;
   margin-left: auto;
   border-radius: 5px;
   background: url("../images/decor/mountains.jpg") center center / cover no-repeat;
@@ -437,6 +475,18 @@ p {
   padding-top: 46px;
   padding-bottom: 59px;
   border-top: 1px solid rgba(255, 255, 255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__col {
+  display: flex;
+  align-items: center;
+}
+
+.footer__col--aline--right {
+  align-items: flex-end;
 }
 
 .footer__menu {
