@@ -61,6 +61,10 @@ html, body {
   background: url(../images/decor/1.jpg) center top no-repeat, url(../images/decor/2.jpg) right bottom 230px no-repeat;
 }
 
+.welcome-wrapper {
+  background: url(../images/bg.jpg) center no-repeat;
+}
+
 .container {
  margin: 0 auto;
  width: 1140px;
@@ -212,6 +216,14 @@ html, body {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.btn--welcome {
+  position: relative;
+  top: 612px;
+  left: 876px;
+  transform: translate(-50%, -50%);
+  margin-bottom: 8px;
 }
 
 .btn:hover {
@@ -731,6 +743,38 @@ html, body {
   height: 49px;
   justify-content: center;
   align-items: center;
+}
+
+.block--one {
+  background: url(../images/shades.png) center  no-repeat;
+  position: relative;
+  Width: 1920px;
+  Height: 960px
+}
+
+.block--one .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  Top: 356px;
+  Left: 665px;
+}
+
+.block--two {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome-text {
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  top: 534px;
+  left: 862px;
 }
 
 
