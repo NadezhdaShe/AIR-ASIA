@@ -1,0 +1,26 @@
+.contacts {
+  font-style: normal;
+  text-align: right;
+}
+
+.contacts__info {
+  color: #9A9A9A;
+  font-size: 11px;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+
+.contacts__phone {
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1;
+  display: block;
+}
+
+.contacts__shedule {
+  font-size: 13px;
+  text-decoration: underline;
+  color: #bfb56b;
+  line-height: 1;
+  display: block;
+}

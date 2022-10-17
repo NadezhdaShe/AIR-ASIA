@@ -1,0 +1,29 @@
+.hero {
+  margin-bottom: 247px;
+}
+ 
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
+}
+
+.hero__text-section {
+  width: 45%;
+  /* width: 520px; */
+}
+
+.hero__title {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 98px;
+  margin-bottom: 27px; 
+}
+
+.hero__discription {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 33px;
+  line-height: 20px;
+}

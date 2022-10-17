@@ -1,0 +1,36 @@
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials__item {
+  margin-right: 10px;
+}
+
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__massege {
+  display: block;  
+  width: 36px;
+  height: 36px;
+  background: center center no-repeat;
+}
+
+.socials__massege--icon-tg {
+  background-image: url(../../images/icons/telegram.png);
+}
+
+.socials__massege--icon-vk {
+  background-image: url(../../images/icons/vk.png);
+}
+
+.socials__massege--icon-fb {
+  background-image: url(../../images/icons/f.png);
+}
+
+.socials__massege--icon-ig {
+  background-image: url(../../images/icons/in.png);
+}

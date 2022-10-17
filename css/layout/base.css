@@ -1,0 +1,77 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {  
+  font: 16px/1.5 'Open Sans', Arial, Helvetica, sans-serif ;
+  color: #fff;
+  background: #001821;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-width: 1200px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main-page-wrapper {
+  background: url(../../images/decor/1.jpg) center top no-repeat, url(../images/decor/2.jpg) right bottom 230px no-repeat;
+}
+
+.welcome-wrapper {
+  background: url(../../images/bg.jpg) center no-repeat;
+}
+
+.wrapper__content {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+ list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+  position: relative;
+ }
+ 
+ 

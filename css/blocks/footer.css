@@ -1,0 +1,35 @@
+.footer {
+  position: relative;
+  padding-top: 46px;
+  padding-bottom: 59px;
+  border-top: 1px solid rgba(255, 255, 255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.footer__col {
+  display: flex;
+  align-items: center;
+}
+
+.footer__col--aline--right {
+  align-items: flex-end;
+}
+
+.footer__menu {
+  position: absolute;
+  left: 164px;
+  top: 56px;
+}
+
+.footer__socials {
+  margin-right: 265px;
+}
+
+.footer__contacts {
+  position: absolute;
+  right: 0;
+  top: 43px;
+}
