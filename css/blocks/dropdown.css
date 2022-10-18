@@ -1,5 +1,6 @@
 
 .dropdown {
+  position: initial;
   margin: auto;
   background: url(../../images/grafikrab.png);
 }
@@ -7,5 +8,5 @@
 .dropdown--contacts {
   position: relative;
   font-size: 13px;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
