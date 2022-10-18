@@ -1,0 +1,35 @@
+.controls {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.controls__item {
+  margin-bottom: 22px;
+  margin-right: 18px;
+}
+
+.control__elem {
+  cursor: pointer;
+  position: relative;
+}
+
+.controls__checkbox:checked ~ .controls__tag {
+  background-color: #B9EAE4;
+}
+
+.controls__checkbox:focus + .controls__tag {
+  background-color: #E7E7E7;
+}
+
+.controls__checkbox {
+  /* display: none; */
+  appearance: none;
+  -ms-progress-appearance: none;
+  position: absolute;
+}
+
+.controls__tag {
+  border: 2px solid transparent;
+}

@@ -181,61 +181,67 @@
       <section class="inner-section inner-section--bg--grey">
         <div class="container">
           <h2 class="inner-section__title">Оставьте отзыв</h2>
-          <form class="forma">
+          <form class="form">
             <div class="form__row">
-              <input type="text" placeholder="ФИО" class="form__input">
-              <input type="text" placeholder="Ссылка на профиль VK" class="form__input">
+              <input type="text" placeholder="Игорь Петрович" name="name" class="form__input">
+              <input type="text" placeholder="Ссылка на профиль VK" name="socials" class="form__input">
             </div>
             <div class="form__row">
-              <textarea class="form__input form__input--texterea"></textarea>
+              <textarea name="messege" class="form__input form__input--texterea" placeholder="Напишите свой честный отзыв ;)" ></textarea>
+              </div>  
+              <div class="form__row">            
             <div class="form__controls">
               <div class="form__controls-title">Какими услугами компании пользуетесь?</div>
               <ul class="controls">
                 <li class="controls__item">
                   <lable class="controls__elem">
-                    <input type="checkbox" class="controls__checkbox">
-                  <div class="tag controls__tag">Остров обезьян</div>
+                    <input type="checkbox" name="services" class="controls__checkbox">
+                  <span class="controls__tag tag">Остров обезьян</span>
                 </lable>
                 </li>
                 <li class="controls__item">
                   <lable class="controls__elem">
-                    <input type="checkbox" class="controls__checkbox">
-                  <div class="tag controls__tag">Тур по Тайланду</div>
+                    <input type="checkbox" name="services" class="controls__checkbox">
+                  <span class="controls__tag tag">Тур по Тайланду</span>
                 </lable>
                 </li>
                 <li class="controls__item">
                   <lable class="controls__elem">
-                    <input type="checkbox" class="controls__checkbox">
-                  <div class="tag controls__tag">Водопад Янг-бей</div>
+                    <input type="checkbox" name="services" class="controls__checkbox">
+                  <span class="controls__tag tag">Водопад Янг-бей</span>
                 </lable>
                 </li>
                 <li class="controls__item">
                   <lable class="controls__elem">
-                    <input type="checkbox" class="controls__checkbox">
-                  <div class="tag controls__tag">Тур по Индонезии</div>
+                    <input type="checkbox" name="services" class="controls__checkbox">
+                  <span class="controls__tag tag">Тур по Индонезии</span>
                 </lable>
                 </li>
                 <li class="controls__item">
                   <lable class="controls__elem">
-                    <input type="checkbox" class="controls__checkbox">
-                  <div class="tag controls__tag">Никакими</div>
+                    <input type="checkbox" name="services" class="controls__checkbox">
+                  <span class="controls__tag tag">Никакими</span>
                 </lable>
                 </li>
                 <li class="controls__item">
                   <lable class="controls__elem">
-                    <input type="checkbox" class="controls__checkbox">
-                  <div class="tag controls__tag">Тур по Бали</div>
+                    <input type="checkbox" name="services" class="controls__checkbox">
+                  <span class="controls__tag tag">Тур по Бали</span>
                 </lable>
                 </li>
                 <li class="controls__item">
                   <lable class="controls__elem">
-                    <input type="checkbox" class="controls__checkbox">
-                  <div class="tag controls__tag">Другое</div>
+                    <input type="checkbox" name="services" class="controls__checkbox">
+                  <span class="controls__tag tag">Другое</span>
                 </lable>
                 </li>
               </ul>
-            </div>
-            </div>
+            </div>  
+          </div>  
+            <div class="form__btns">
+              <button type="reset" class="btn form__btn btn--color--grey">Очистить</button>
+              <button type="submit" class="btn form__btn">Отправить</button>
+            </div>        
           </form>
         </div>
       </section>

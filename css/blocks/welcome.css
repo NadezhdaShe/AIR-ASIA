@@ -1,0 +1,23 @@
+.welcome {
+  background: url(../../images/bg.jpg) center  no-repeat;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  Width: 100%;
+  Height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome__container {
+  background: url(../../images/shades.png) center no-repeat;
+  Width: 591px;
+  Height: 248px;
+  Top: 356px;
+  Left: 665px;
+}
+
+.welcome-text {
+  margin-bottom: 71px;
+}
