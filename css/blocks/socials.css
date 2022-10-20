@@ -17,6 +17,7 @@
   width: 36px;
   height: 36px;
   background: center center no-repeat;
+  transition: background .3s;
 }
 
 .socials__massege--icon-tg {
@@ -33,4 +34,20 @@
 
 .socials__massege--icon-ig {
   background-image: url(../../images/icons/in.png);
+}
+
+.socials__massege--icon-tg:hover {
+  background-image: url(../../images/icons/tg_hov.png);
+}
+
+.socials__massege--icon-vk:hover {
+  background-image: url(../../images/icons/vk_hov.png);
+}
+
+.socials__massege--icon-fb:hover {
+  background-image: url(../../images/icons/f_hov.png);
+}
+
+.socials__massege--icon-ig:hover {
+  background-image: url(../../images/icons/in_hov.png);  
 }
