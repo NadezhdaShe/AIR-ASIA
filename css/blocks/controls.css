@@ -6,8 +6,6 @@
 }
 
 .controls__item {
-  margin-bottom: 22px;
-  margin-right: 18px;
 }
 
 .control__elem {
@@ -16,11 +14,11 @@
 }
 
 .controls__checkbox:checked ~ .controls__tag {
-  background-color: #B9EAE4;
+  background-color:  #E7E7E7;
 }
 
 .controls__checkbox:focus + .controls__tag {
-  background-color: #E7E7E7;
+  background-color: #B9EAE4;
 }
 
 .controls__checkbox {

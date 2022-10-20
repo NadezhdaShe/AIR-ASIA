@@ -1,7 +1,11 @@
 .form__row {
   display: flex; 
-  margin-bottom: 47px; 
+  margin-bottom: 26px; 
   align-items: center;
+}
+
+.form__row--controls {
+  margin-bottom: 32px;
 }
 
 .form__input {
@@ -32,14 +36,11 @@
 
 .form__controls {
   display: flex;
-  margin-bottom: 42px;
 }
 
 .form__controls-title {
   width: 40%;
-  padding-left: 30px;
   font-size: 18px;
-  margin-right: 74px;
 }
 
 .form__input--texterea {

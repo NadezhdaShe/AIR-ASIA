@@ -3,6 +3,7 @@
   background: url(../../images/bg/headline1.jpg);
   display: flex;
   flex-direction: column;
+  padding-bottom: 22px;
 }
 
 .top-line__container {

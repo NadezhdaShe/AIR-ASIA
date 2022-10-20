@@ -11,5 +11,11 @@
 .inner-section__title {
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: 99px;
+  margin-bottom: 87px;
+}
+
+.inner-section__title--rev {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 57px;
 }

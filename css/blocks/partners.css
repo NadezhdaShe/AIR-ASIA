@@ -31,4 +31,10 @@
   height: 49px;
   justify-content: center;
   align-items: center;
+  filter: grayscale(1);
+  transition: filter .3s;
+}
+
+.partners__link:hover {
+  filter: grayscale(0);
 }

@@ -18,12 +18,10 @@
 .menu__link {
   font-size: 14px;
   text-decoration: none; 
-  height: 19px;
-  width: 54px;
-  left: 79px;
-  top: 42px;
+  transition: color .3s;
 }
   
-.menu__link:hover {
-  color: #bfb56b ;
+.menu__link:hover, .menu__link--active {
+  
+  color: #DA0100 ;
 }

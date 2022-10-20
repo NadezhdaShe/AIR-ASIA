@@ -1,5 +1,5 @@
 .separator {
-  background: url("../../images/bg/Rectangle.jpg"), url("../images/decor/couple.png") right 20% bottom no-repeat ;
+  background: url("../../images/decor/couple.png") right 20% bottom no-repeat, url("../../images/bg/Rectangle.jpg") ;
   min-height: 363px;
   display: flex;
   flex-direction: column;
@@ -18,5 +18,5 @@
 }
 
 .separator__img {
-  display: inline;
+  display: block;
 }
