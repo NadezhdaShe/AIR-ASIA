@@ -13,16 +13,71 @@
 }
 
 .socials__massege {
-  display: block;  
+  display: block; 
   width: 36px;
   height: 36px;
   background: center center no-repeat;
-  transition: background .3s;
+  transition: background .3s; 
+  position: relative;
 }
 
-.socials__massege--icon-tg {
-  background-image: url(../../images/icons/telegram.png);
+.socials__massege:before {
+  opacity: 1;
 }
+
+.socials__massege:after {  
+  background: url('../../images/icons/sprit.png') center center no-repeat;
+  opacity: 0;
+  
+}
+
+.socials__massege--icon-tg:after {
+  background-position:  -122px -10px;
+}
+
+.socials__massege--icon-tg:hover:after {
+  background-position:  -122px -66px;
+}
+
+.socials__massege--icon-vk:after {
+  background-position:  -10px -122px;
+}
+
+.socials__massege--icon-vk:hover:after {
+  background-position:  -66px -122px;
+}
+
+.socials__massege--icon-fb:after {
+  background-position:  -10px -10px;
+}
+
+.socials__massege--icon-fb:hover:after {
+  background-position:  -66px -10px;
+}
+
+.socials__massege--icon-ig:after {
+  background-position:  -10px -66px;
+}
+
+.socials__massege--icon-ig:hover:after {
+  background-position:  -66px -66px;
+}
+ 
+
+/* .socials__massege:after {  
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translate(50%, 50%);
+  width: 36px; height: 36px;
+  background: url('./images/icons/sprit.png') -122px -10px;
+}
+
+.socials__massege--icon-tg:hover:after {  
+  width: 36px; height: 36px;
+  background: url('./images/icons/sprit.png') -122px -66px;
+}
+
 
 .socials__massege--icon-vk {
   background-image: url(../../images/icons/vk.png);
@@ -51,3 +106,4 @@
 .socials__massege--icon-ig:hover {
   background-image: url(../../images/icons/in_hov.png);  
 }
+*/
